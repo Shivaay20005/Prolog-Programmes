@@ -1,4 +1,4 @@
-% CODE:
+% list concatenation CODE:
 conc([], L, L).
 conc([H|T], L2, [H|T3]) :- conc(T, L2, T3).
 

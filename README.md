@@ -1,162 +1,146 @@
-# Prolog Programming Repository 🧠
+# Prolog Programming Language Repository
 
-Welcome to an extensive collection of Prolog programs implementing various Artificial Intelligence algorithms, search techniques, and logical programming concepts!
+Welcome to the Prolog Programming Language repository! This collection contains implementations of various artificial intelligence algorithms, data structures, and problem-solving techniques using Prolog, a logic programming language particularly well-suited for AI applications.
 
-## 🎯 About This Repository
+## About Prolog
 
-This repository contains a comprehensive set of Prolog implementations covering fundamental and advanced AI algorithms. Each program is well-documented and includes example use cases to help you understand the concepts.
+Prolog (Programming in Logic) is a declarative programming language associated with artificial intelligence and computational linguistics. Programs in Prolog consist of relations and rules rather than sequences of instructions. It excels in pattern matching, symbolic computation, and knowledge representation.
 
-## 👨‍💻 Created By
-**Shivaay Developer (Shivaay20005)**
+### Key Features of Prolog:
+- Declarative programming paradigm
+- Built-in pattern matching
+- Backtracking capability
+- Unification mechanism
+- Natural representation of symbolic knowledge
 
-AI Assistant: Shivaay Devil  
-Contact: +91 8081053743
+## Repository Contents
 
-## 📚 Program Categories
+This repository contains implementations of fundamental algorithms and problems commonly encountered in Artificial Intelligence courses:
 
-### 🔍 Search Algorithms
-- **A* Search** - Optimal pathfinding algorithm
-- **Best First Search** - Heuristic-guided search
-- **Hill Climbing** - Local optimization technique
-- **Min-Max** - Game theory decision making
+### Mathematical Functions
+- [factorial.pl](factorial.pl) - Computes factorial of a number using recursion
+- [fibonacci.pl](fibonacci.pl) - Generates Fibonacci numbers
+- [power_calculation.pl](power_calculation.pl) - Calculates powers of numbers
+- [multiplication.pl](multiplication.pl) - Implements multiplication using addition
+- [sum_two_num.pl](sum_two_num.pl) - Adds two numbers
+- [sum_of_list.pl](sum_of_list.pl) - Computes sum of elements in a list
+- [maximum_two_num.pl](maximum_two_num.pl) - Finds maximum of two numbers
+- [maximum_in_list.pl](maximum_in_list.pl) - Finds maximum element in a list
 
-### 🧩 Classic Problems
-- **Tower of Hanoi** - Recursive puzzle solution
-- **Water Jug Problem** - State-space search
-- **Sudoku Solver** - Constraint satisfaction
+### List Operations
+- [listreverse.pl](list_reverse.pl) - Reverses a list
+- [list_concatenation.pl](list_concatenation.pl) - Concatenates two lists
+- [member_check.pl](member_check.pl) - Checks membership of an element in a list
+- [insert_at_position.pl](insert_at_position.pl) - Inserts an element at a specific position
+- [delete_from_position.pl](delete_from_position.pl) - Deletes an element from a specific position
+- [even-odd-length.pl](even-odd-length.pl) - Determines if a list has even or odd length
 
-### 📖 Knowledge Representation
-- **Enhanced Family Tree** - Complex relationship modeling
-- **Frames System** - Object-oriented knowledge representation
-- **Parse Trees** - Natural language processing
-- **CFG Recognizer** - Context-free grammar validation
+### Search Algorithms
+- [a_star_search.pl](a_star_search.pl) - Implementation of A* search algorithm
+- [best_first_search.pl](best_first_search.pl) - Best-first search implementation
+- [hill_climbing.pl](hill_climbing.pl) - Hill climbing search technique
 
-### 📊 List Operations
-- List Concatenation
-- List Reversal
-- Element Membership
-- Insert/Delete at Position
+### Classic AI Problems
+- [tower_of_hanoi.pl](tower_of_hanoi.pl) - Tower of Hanoi puzzle solution
+- [water_jug.pl](water_jug.pl) - Water jug problem solver
+- [sudoku.pl](sudoku.pl) - Sudoku puzzle solver using constraint satisfaction
+- [family_tree.pl](family_tree.pl) - Family relationship representation and querying
+- [enhanced_family_tree.pl](enhanced_family_tree.pl) - Extended family tree with more relationships
 
-### ➕ Mathematical Functions
-- Factorial & Fibonacci
-- Power Calculation
-- Maximum/Minimum Finding
-- Arithmetic Operations
+### Knowledge Representation
+- [frames.pl](frames.pl) - Frame-based knowledge representation system
+- [cfg_anbn.pl](cfg_anbn.pl) - Context-free grammar for a^n b^n language
+- [parse_tree.pl](parse_tree.pl) - Natural language parsing with parse trees
 
-## 🚀 Getting Started
+### Utility Files
+- [min_max.pl](min_max.pl) - Finds minimum and maximum in a list
+
+## Getting Started
 
 ### Prerequisites
-- SWI-Prolog or any Prolog interpreter
+To run these Prolog programs, you need a Prolog interpreter installed:
+- SWI-Prolog (recommended)
+- GNU Prolog
+- Other ISO-compliant Prolog systems
+
+### Installation
+1. Install SWI-Prolog from [https://www.swi-prolog.org/Download.html](https://www.swi-prolog.org/Download.html)
+2. Clone this repository:
+   ```
+   git clone <repository-url>
+   ```
 
 ### Running the Programs
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/Shivaay20005/Prolog-Programmes.git
+1. Open a terminal/command prompt
+2. Navigate to the repository directory
+3. Start the Prolog interpreter:
    ```
-2. Navigate to the directory:
-   ```bash
-   cd Prolog-Programmes
+   swipl
    ```
-3. Load any program in SWI-Prolog:
-   ```bash
-   swipl program_name.pl
+4. Load a program:
    ```
-4. Execute queries as shown in each file's comments
+   ?- [filename].
+   ```
+   For example:
+   ```
+   ?- [factorial].
+   ```
+5. Query the predicates:
+   ```
+   ?- factorial(5, F).
+   F = 120.
+   ```
 
-### Example Usage
+## Example Usage
+
+### Factorial Calculation
 ```prolog
-?- tower_of_hanoi(3).
-Move disk from A to C
-Move disk from A to B
-Move disk from C to B
-...
-
-?- solve_water_jug(Solution).
-Solution = [state(0, 0), state(0, 3), state(3, 0), ...]
-```
-
-## 📁 File Structure
-```
-Prolog-Programmes/
-├── Search Algorithms/
-│   ├── a_star_search.pl
-│   ├── best_first_search.pl
-│   ├── hill_climbing.pl
-│   └── min_max.pl
-├── Classic Problems/
-│   ├── tower_of_hanoi.pl
-│   ├── water_jug.pl
-│   └── sudoku.pl
-├── Knowledge Representation/
-│   ├── enhanced_family_tree.pl
-│   ├── frames.pl
-│   ├── parse_tree.pl
-│   └── cfg_anbn.pl
-├── List Operations/
-│   ├── list_concatenation.pl
-│   ├── listreverse.pl
-│   ├── member_check.pl
-│   ├── insert_at_position.pl
-│   └── delete_from_position.pl
-└── Mathematical Functions/
-    ├── factorial.pl
-    ├── fibonacci.pl
-    ├── power_calculation.pl
-    ├── maximum_two_num.pl
-    ├── maximum_in_list.pl
-    ├── sum_two_num.pl
-    ├── sum_of_list.pl
-    ├── multiplication.pl
-    └── even-odd-length.pl
-```
-
-## 🧪 Sample Queries
-
-### Tower of Hanoi
-```prolog
-?- tower_of_hanoi(3).
+?- [factorial].
+?- factorial(5, Result).
+Result = 120.
 ```
 
 ### Family Relationships
 ```prolog
-?- father(john, mary).
-?- grandparent(john, ann).
+?- [family_tree].
+?- father(john, Child).
+Child = mary ;
+Child = tom.
 ```
 
-### List Operations
+### Tower of Hanoi
 ```prolog
-?- conc([1,2], [3,4], R).
-R = [1,2,3,4].
-
-?- reverse([a,b,c], R).
-R = [c,b,a].
+?- [tower_of_hanoi].
+?- tower_of_hanoi(3).
+Move disk from A to C
+Move disk from A to B
+Move disk from C to B
+Move disk from A to C
+Move disk from B to A
+Move disk from B to C
+Move disk from A to C
+true.
 ```
 
-### Mathematical Functions
-```prolog
-?- factorial(5, F).
-F = 120.
+## Academic Context
 
-?- fibonacci(6, F).
-F = 8.
-```
+This repository was created as part of the Artificial Intelligence course curriculum at Delhi University for 2nd-year students. The programs demonstrate fundamental concepts in AI including:
 
-## 🤝 Contributing
+1. **Logical Reasoning** - Using Prolog's built-in logical inference engine
+2. **Search Techniques** - Implementing uninformed and informed search algorithms
+3. **Knowledge Representation** - Modeling real-world domains using facts and rules
+4. **Natural Language Processing** - Parsing sentences and generating parse trees
+5. **Constraint Satisfaction** - Solving problems with constraints (Sudoku)
 
-Feel free to fork this repository and contribute by:
-1. Adding new Prolog implementations
-2. Improving existing algorithms
-3. Adding more example use cases
-4. Fixing bugs or optimizing code
+## Author
 
-## 📄 License
+**Shivaay** - Delhi University
 
-This project is created for educational and learning purposes. Feel free to use and modify the code for your own learning.
+## License
 
-## 🌟 Show Your Support
+This project is created for educational purposes as part of an academic curriculum. Feel free to use these examples for learning Prolog and understanding AI concepts.
 
-If you find this repository helpful, please give it a star! ⭐
+## Acknowledgments
 
----
-
-**Made with ❤️ using Prolog**
+- Delhi University Faculty for the Artificial Intelligence course curriculum
+- The Prolog community for excellent documentation and resources

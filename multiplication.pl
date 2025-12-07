@@ -1,4 +1,4 @@
-% CODE:
+% multiplication CODE:
 multi(N1, N2, R) :- R is N1 * N2.
 
 % USE CASE RUN:

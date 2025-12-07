@@ -1,4 +1,4 @@
-% CODE:
+% sum of two num CODE:
 sum(X, Y, Result) :- Result is X + Y.
 
 % USE CASE RUN:

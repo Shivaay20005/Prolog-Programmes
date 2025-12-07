@@ -1,4 +1,4 @@
-% CODE:
+% even odd length CODE:
 evenlength([]).
 evenlength([_|T]) :- oddlength(T).
 oddlength([_]).
